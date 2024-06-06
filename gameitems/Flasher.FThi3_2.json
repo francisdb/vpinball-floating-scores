@@ -1,0 +1,73 @@
+{
+  "Flasher": {
+    "height": 250.0,
+    "pos_x": -743.2162,
+    "pos_y": 660.8258,
+    "rot_x": 0.0,
+    "rot_y": 0.0,
+    "rot_z": 0.0,
+    "color": "#ff3719",
+    "is_timer_enabled": false,
+    "timer_interval": 100,
+    "name": "FThi3_2",
+    "image_a": "font_1",
+    "image_b": "Font_Comma",
+    "alpha": 1200,
+    "modulate_vs_add": 0.0,
+    "is_visible": false,
+    "add_blend": true,
+    "is_dmd": false,
+    "display_texture": false,
+    "depth_bias": 0.0,
+    "image_alignment": "wrap",
+    "filter": "screen",
+    "filter_amount": 100,
+    "light_map": null,
+    "drag_points": [
+      {
+        "x": -956.43616,
+        "y": 611.5828,
+        "z": 0.0,
+        "smooth": false,
+        "is_slingshot": false,
+        "has_auto_texture": true,
+        "tex_coord": 0.0,
+        "is_locked": false,
+        "editor_layer": 0
+      },
+      {
+        "x": -956.43616,
+        "y": 811.5828,
+        "z": 0.0,
+        "smooth": false,
+        "is_slingshot": false,
+        "has_auto_texture": true,
+        "tex_coord": 0.0,
+        "is_locked": false,
+        "editor_layer": 0
+      },
+      {
+        "x": -756.43616,
+        "y": 811.5828,
+        "z": 0.0,
+        "smooth": false,
+        "is_slingshot": false,
+        "has_auto_texture": true,
+        "tex_coord": 0.0,
+        "is_locked": false,
+        "editor_layer": 0
+      },
+      {
+        "x": -756.43616,
+        "y": 611.5828,
+        "z": 0.0,
+        "smooth": false,
+        "is_slingshot": false,
+        "has_auto_texture": true,
+        "tex_coord": 0.0,
+        "is_locked": false,
+        "editor_layer": 0
+      }
+    ]
+  }
+}

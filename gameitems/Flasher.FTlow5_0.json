@@ -1,0 +1,73 @@
+{
+  "Flasher": {
+    "height": 250.0,
+    "pos_x": -847.2342,
+    "pos_y": 675.7457,
+    "rot_x": 0.0,
+    "rot_y": 0.0,
+    "rot_z": 0.0,
+    "color": "#33f733",
+    "is_timer_enabled": false,
+    "timer_interval": 100,
+    "name": "FTlow5_0",
+    "image_a": "font_1",
+    "image_b": "Font_Comma",
+    "alpha": 500,
+    "modulate_vs_add": 0.0,
+    "is_visible": false,
+    "add_blend": true,
+    "is_dmd": false,
+    "display_texture": false,
+    "depth_bias": 0.0,
+    "image_alignment": "wrap",
+    "filter": "screen",
+    "filter_amount": 100,
+    "light_map": null,
+    "drag_points": [
+      {
+        "x": -868.2358,
+        "y": 892.275,
+        "z": 0.0,
+        "smooth": false,
+        "is_slingshot": false,
+        "has_auto_texture": true,
+        "tex_coord": 0.0,
+        "is_locked": false,
+        "editor_layer": 0
+      },
+      {
+        "x": -868.2358,
+        "y": 917.275,
+        "z": 0.0,
+        "smooth": false,
+        "is_slingshot": false,
+        "has_auto_texture": true,
+        "tex_coord": 0.0,
+        "is_locked": false,
+        "editor_layer": 0
+      },
+      {
+        "x": -843.2358,
+        "y": 917.275,
+        "z": 0.0,
+        "smooth": false,
+        "is_slingshot": false,
+        "has_auto_texture": true,
+        "tex_coord": 0.0,
+        "is_locked": false,
+        "editor_layer": 0
+      },
+      {
+        "x": -843.2358,
+        "y": 892.275,
+        "z": 0.0,
+        "smooth": false,
+        "is_slingshot": false,
+        "has_auto_texture": true,
+        "tex_coord": 0.0,
+        "is_locked": false,
+        "editor_layer": 0
+      }
+    ]
+  }
+}

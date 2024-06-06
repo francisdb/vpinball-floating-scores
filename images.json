@@ -1,0 +1,79 @@
+[
+  {
+    "name": "Font_1",
+    "internal_name": "font_1",
+    "path": "F:\\Pinmame\\Dev\\Common Resources\\Assets\\Displays\\TestFont\\o\\Font_1.png",
+    "alpha_test_value": 1.0,
+    "jpeg_internal_name": "font_1"
+  },
+  {
+    "name": "Font_2",
+    "internal_name": "font_2",
+    "path": "F:\\Pinmame\\Dev\\Common Resources\\Assets\\Displays\\TestFont\\o\\Font_2.png",
+    "alpha_test_value": 1.0,
+    "jpeg_internal_name": "font_2"
+  },
+  {
+    "name": "Font_3",
+    "internal_name": "font_3",
+    "path": "F:\\Pinmame\\Dev\\Common Resources\\Assets\\Displays\\TestFont\\o\\Font_3.png",
+    "alpha_test_value": 1.0,
+    "jpeg_internal_name": "font_3"
+  },
+  {
+    "name": "Font_4",
+    "internal_name": "font_4",
+    "path": "F:\\Pinmame\\Dev\\Common Resources\\Assets\\Displays\\TestFont\\o\\Font_4.png",
+    "alpha_test_value": 1.0,
+    "jpeg_internal_name": "font_4"
+  },
+  {
+    "name": "Font_5",
+    "internal_name": "font_5",
+    "path": "F:\\Pinmame\\Dev\\Common Resources\\Assets\\Displays\\TestFont\\o\\Font_5.png",
+    "alpha_test_value": 1.0,
+    "jpeg_internal_name": "font_5"
+  },
+  {
+    "name": "Font_6",
+    "internal_name": "font_6",
+    "path": "F:\\Pinmame\\Dev\\Common Resources\\Assets\\Displays\\TestFont\\o\\Font_6.png",
+    "alpha_test_value": 1.0,
+    "jpeg_internal_name": "font_6"
+  },
+  {
+    "name": "Font_7",
+    "internal_name": "font_7",
+    "path": "F:\\Pinmame\\Dev\\Common Resources\\Assets\\Displays\\TestFont\\o\\Font_7.png",
+    "alpha_test_value": 1.0,
+    "jpeg_internal_name": "font_7"
+  },
+  {
+    "name": "Font_8",
+    "internal_name": "font_8",
+    "path": "F:\\Pinmame\\Dev\\Common Resources\\Assets\\Displays\\TestFont\\o\\Font_8.png",
+    "alpha_test_value": 1.0,
+    "jpeg_internal_name": "font_8"
+  },
+  {
+    "name": "Font_9",
+    "internal_name": "font_9",
+    "path": "F:\\Pinmame\\Dev\\Common Resources\\Assets\\Displays\\TestFont\\o\\Font_9.png",
+    "alpha_test_value": 1.0,
+    "jpeg_internal_name": "font_9"
+  },
+  {
+    "name": "Font_Comma",
+    "internal_name": "font_comma",
+    "path": "F:\\Pinmame\\Dev\\Common Resources\\Assets\\Displays\\TestFont\\o\\Font_Comma.png",
+    "alpha_test_value": 1.0,
+    "jpeg_internal_name": "font_comma"
+  },
+  {
+    "name": "Font_0",
+    "internal_name": "font_0",
+    "path": "F:\\Pinmame\\Dev\\Common Resources\\Assets\\Displays\\TestFont\\o\\Font_0.png",
+    "alpha_test_value": 1.0,
+    "jpeg_internal_name": "font_0"
+  }
+]

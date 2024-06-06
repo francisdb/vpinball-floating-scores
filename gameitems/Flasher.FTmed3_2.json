@@ -1,0 +1,73 @@
+{
+  "Flasher": {
+    "height": 250.0,
+    "pos_x": -962.59814,
+    "pos_y": 913.07996,
+    "rot_x": 0.0,
+    "rot_y": 0.0,
+    "rot_z": 0.0,
+    "color": "#f7a433",
+    "is_timer_enabled": false,
+    "timer_interval": 100,
+    "name": "FTmed3_2",
+    "image_a": "font_1",
+    "image_b": "Font_Comma",
+    "alpha": 500,
+    "modulate_vs_add": 0.0,
+    "is_visible": false,
+    "add_blend": true,
+    "is_dmd": false,
+    "display_texture": false,
+    "depth_bias": 0.0,
+    "image_alignment": "wrap",
+    "filter": "screen",
+    "filter_amount": 100,
+    "light_map": null,
+    "drag_points": [
+      {
+        "x": -1100.8176,
+        "y": 938.8369,
+        "z": 0.0,
+        "smooth": false,
+        "is_slingshot": false,
+        "has_auto_texture": true,
+        "tex_coord": 0.0,
+        "is_locked": false,
+        "editor_layer": 0
+      },
+      {
+        "x": -1100.8176,
+        "y": 988.8369,
+        "z": 0.0,
+        "smooth": false,
+        "is_slingshot": false,
+        "has_auto_texture": true,
+        "tex_coord": 0.0,
+        "is_locked": false,
+        "editor_layer": 0
+      },
+      {
+        "x": -1050.8176,
+        "y": 988.8369,
+        "z": 0.0,
+        "smooth": false,
+        "is_slingshot": false,
+        "has_auto_texture": true,
+        "tex_coord": 0.0,
+        "is_locked": false,
+        "editor_layer": 0
+      },
+      {
+        "x": -1050.8176,
+        "y": 938.8369,
+        "z": 0.0,
+        "smooth": false,
+        "is_slingshot": false,
+        "has_auto_texture": true,
+        "tex_coord": 0.0,
+        "is_locked": false,
+        "editor_layer": 0
+      }
+    ]
+  }
+}
