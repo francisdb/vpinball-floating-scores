@@ -22,12 +22,17 @@ We are going to add a TextBox (only for the timer), a lot of Flashers and some I
 
 ## Table script
 
-Currently, the system is set up for rom-based tables obly. It's also requesting the full NVRAM instead of looking at changes.
-To make this work you need to add `UseVPMNVRAM = true` to the table script (place before LoadVPM, or otherwise calling core.vbs)
+Currently, the system is set up for rom-based tables only.
+To make this work you need to set `UseVPMNVRAM` to true in the table script (place before LoadVPM, or otherwise calling core.vbs)
 After that you can request the NVRAM with `Controller.NVRAM`
 
-To make changed content of NVRAM available create a `Sub NVRAMCallback` (requires VPM 2.7 or newer)
-The callback will receive an `Array` that contains the changes as an `Array(location, new value, old value)`
+```vbscript
+' place before LoadVPM, or otherwise calling core.vbs
+UseVPMNVRAM = true
+```
+
+*To make changed content of NVRAM available create a `Sub NVRAMCallback` (requires VPM 2.7 or newer)
+The callback will receive an `Array` that contains the changes as an `Array(location, new value, old value)`*
 
 For Sys 11 the current score is located at the range `&h200` - `&h203`.
 
