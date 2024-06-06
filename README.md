@@ -8,7 +8,7 @@ The floating scores script was extracted from [Space Station (Wiliams 1987)](htt
 
 ## Game items
 
-Since a lot of gema items need to be added to the table I suggest you do this using [vpxtool](https://github.com/francisdb/vpxtool).
+Since a lot of game items need to be added to the table I suggest you do this using [vpxtool](https://github.com/francisdb/vpxtool).
 
 We are going to add a TextBox (only for the timer), a lot of Flashers and some Images.
 
