@@ -12,13 +12,13 @@ Since a lot of game items need to be added to the table I suggest you do this us
 
 We are going to add a TextBox (only for the timer), a lot of Flashers and some Images.
 
-* Make a backup of your table!
-* Extract your existing table `vpxtool extract mytable.vpx`. That will create a folder `mytable` with all the files.
-* Copy over all the gameitems from this repository.
-* Merge the contents of this repository's `gameitems.json` with your own `gameitems.json`.
-* Copy over all the images from this repository.
-* Merge the contents of this repository's `images.json` with your own `images.json`.
-* Re-assemble the table `vpxtool assemble mytable`.
+1. Make a backup of your table!
+2. Extract your existing table `vpxtool extract mytable.vpx`. That will create a folder `mytable` with all the files.
+3. Copy over all the gameitems from this repository.
+4. Merge the contents of this repository's `gameitems.json` with your own `gameitems.json`.
+5. Copy over all the images from this repository.
+6. Merge the contents of this repository's `images.json` with your own `images.json`.
+7. Re-assemble the table `vpxtool assemble mytable`.
 
 ## Table script
 
