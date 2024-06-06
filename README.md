@@ -8,3 +8,12 @@ The floating scores script was extracted from [Space Station (Wiliams 1987)](htt
 ## Resources
 
 ## Table script
+
+Keep in mind that not everybody likes these floating scores so make sure the user can disable it. On the original table they were only enabled for desktop mode:
+
+```vbscript
+Dim FloatingScores
+FloatingScores = Table1.ShowDT 'Enable/Disable floating text scores  (Default: Table1.ShowDT)
+'Does NOT play nicely with B2S at the moment.
+'(In a multiplayer game, floating text will only appear for player 1)
+```
