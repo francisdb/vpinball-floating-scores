@@ -48,6 +48,8 @@ FloatingScores = Table1.ShowDT 'Enable/Disable floating text scores  (Default: T
 
 ### Setup
 
+The red LUT burst is optional and might require some tweaking if your table does not use the default LUT.
+
 ```vbscript
 'Floating text
 '*************
@@ -213,6 +215,7 @@ End Sub
 
 ## TODO
 
+* Currently, the `FloatingText` class requires `lampz.frametime` to be calculated which we did not include in this repository.
 * Explain how to add this to non-rom based tables.
 * Switch to using the NVRAM callback instead of polling the NVRAM.
 * Creating some kind of table patcher in vpxtool to automate this process.

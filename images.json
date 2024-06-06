@@ -75,5 +75,152 @@
     "path": "F:\\Pinmame\\Dev\\Common Resources\\Assets\\Displays\\TestFont\\o\\Font_0.png",
     "alpha_test_value": 1.0,
     "jpeg_internal_name": "font_0"
+  },
+  {
+    "name": "RedLut_0",
+    "internal_name": "redlut_0",
+    "path": "F:\\Pinmame\\Dev\\Common Resources\\LUTs\\SpaceStationLutAffect\\o\\RedLut_0.png",
+    "alpha_test_value": 1.0,
+    "jpeg_internal_name": "redlut_0"
+  },
+  {
+    "name": "RedLut_1",
+    "internal_name": "redlut_1",
+    "path": "F:\\Pinmame\\Dev\\Common Resources\\LUTs\\SpaceStationLutAffect\\o\\RedLut_1.png",
+    "alpha_test_value": 1.0,
+    "jpeg_internal_name": "redlut_1"
+  },
+  {
+    "name": "RedLut_2",
+    "internal_name": "redlut_2",
+    "path": "F:\\Pinmame\\Dev\\Common Resources\\LUTs\\SpaceStationLutAffect\\o\\RedLut_2.png",
+    "alpha_test_value": 1.0,
+    "jpeg_internal_name": "redlut_2"
+  },
+  {
+    "name": "RedLut_3",
+    "internal_name": "redlut_3",
+    "path": "F:\\Pinmame\\Dev\\Common Resources\\LUTs\\SpaceStationLutAffect\\o\\RedLut_3.png",
+    "alpha_test_value": 1.0,
+    "jpeg_internal_name": "redlut_3"
+  },
+  {
+    "name": "RedLut_4",
+    "internal_name": "redlut_4",
+    "path": "F:\\Pinmame\\Dev\\Common Resources\\LUTs\\SpaceStationLutAffect\\o\\RedLut_4.png",
+    "alpha_test_value": 1.0,
+    "jpeg_internal_name": "redlut_4"
+  },
+  {
+    "name": "RedLut_5",
+    "internal_name": "redlut_5",
+    "path": "F:\\Pinmame\\Dev\\Common Resources\\LUTs\\SpaceStationLutAffect\\o\\RedLut_5.png",
+    "alpha_test_value": 1.0,
+    "jpeg_internal_name": "redlut_5"
+  },
+  {
+    "name": "RedLut_6",
+    "internal_name": "redlut_6",
+    "path": "F:\\Pinmame\\Dev\\Common Resources\\LUTs\\SpaceStationLutAffect\\o\\RedLut_6.png",
+    "alpha_test_value": 1.0,
+    "jpeg_internal_name": "redlut_6"
+  },
+  {
+    "name": "RedLut_7",
+    "internal_name": "redlut_7",
+    "path": "F:\\Pinmame\\Dev\\Common Resources\\LUTs\\SpaceStationLutAffect\\o\\RedLut_7.png",
+    "alpha_test_value": 1.0,
+    "jpeg_internal_name": "redlut_7"
+  },
+  {
+    "name": "RedLut_8",
+    "internal_name": "redlut_8",
+    "path": "F:\\Pinmame\\Dev\\Common Resources\\LUTs\\SpaceStationLutAffect\\o\\RedLut_8.png",
+    "alpha_test_value": 1.0,
+    "jpeg_internal_name": "redlut_8"
+  },
+  {
+    "name": "RedLut_9",
+    "internal_name": "redlut_9",
+    "path": "F:\\Pinmame\\Dev\\Common Resources\\LUTs\\SpaceStationLutAffect\\o\\RedLut_9.png",
+    "alpha_test_value": 1.0,
+    "jpeg_internal_name": "redlut_9"
+  },
+  {
+    "name": "RedLut_10",
+    "internal_name": "redlut_10",
+    "path": "F:\\Pinmame\\Dev\\Common Resources\\LUTs\\SpaceStationLutAffect\\o\\RedLut_10.png",
+    "alpha_test_value": 1.0,
+    "jpeg_internal_name": "redlut_10"
+  },
+  {
+    "name": "RedLut_11",
+    "internal_name": "redlut_11",
+    "path": "F:\\Pinmame\\Dev\\Common Resources\\LUTs\\SpaceStationLutAffect\\o\\RedLut_11.png",
+    "alpha_test_value": 1.0,
+    "jpeg_internal_name": "redlut_11"
+  },
+  {
+    "name": "RedLut_12",
+    "internal_name": "redlut_12",
+    "path": "F:\\Pinmame\\Dev\\Common Resources\\LUTs\\SpaceStationLutAffect\\o\\RedLut_12.png",
+    "alpha_test_value": 1.0,
+    "jpeg_internal_name": "redlut_12"
+  },
+  {
+    "name": "RedLut_13",
+    "internal_name": "redlut_13",
+    "path": "F:\\Pinmame\\Dev\\Common Resources\\LUTs\\SpaceStationLutAffect\\o\\RedLut_13.png",
+    "alpha_test_value": 1.0,
+    "jpeg_internal_name": "redlut_13"
+  },
+  {
+    "name": "RedLut_14",
+    "internal_name": "redlut_14",
+    "path": "F:\\Pinmame\\Dev\\Common Resources\\LUTs\\SpaceStationLutAffect\\o\\RedLut_14.png",
+    "alpha_test_value": 1.0,
+    "jpeg_internal_name": "redlut_14"
+  },
+  {
+    "name": "RedLut_15",
+    "internal_name": "redlut_15",
+    "path": "F:\\Pinmame\\Dev\\Common Resources\\LUTs\\SpaceStationLutAffect\\o\\RedLut_15.png",
+    "alpha_test_value": 1.0,
+    "jpeg_internal_name": "redlut_15"
+  },
+  {
+    "name": "RedLut_16",
+    "internal_name": "redlut_16",
+    "path": "F:\\Pinmame\\Dev\\Common Resources\\LUTs\\SpaceStationLutAffect\\o\\RedLut_16.png",
+    "alpha_test_value": 1.0,
+    "jpeg_internal_name": "redlut_16"
+  },
+  {
+    "name": "RedLut_17",
+    "internal_name": "redlut_17",
+    "path": "F:\\Pinmame\\Dev\\Common Resources\\LUTs\\SpaceStationLutAffect\\o\\RedLut_17.png",
+    "alpha_test_value": 1.0,
+    "jpeg_internal_name": "redlut_17"
+  },
+  {
+    "name": "RedLut_18",
+    "internal_name": "redlut_18",
+    "path": "F:\\Pinmame\\Dev\\Common Resources\\LUTs\\SpaceStationLutAffect\\o\\RedLut_18.png",
+    "alpha_test_value": 1.0,
+    "jpeg_internal_name": "redlut_18"
+  },
+  {
+    "name": "RedLut_19",
+    "internal_name": "redlut_19",
+    "path": "F:\\Pinmame\\Dev\\Common Resources\\LUTs\\SpaceStationLutAffect\\o\\RedLut_19.png",
+    "alpha_test_value": 1.0,
+    "jpeg_internal_name": "redlut_19"
+  },
+  {
+    "name": "RedLut_20",
+    "internal_name": "redlut_20",
+    "path": "F:\\Pinmame\\Dev\\Common Resources\\LUTs\\SpaceStationLutAffect\\o\\RedLut_20.png",
+    "alpha_test_value": 1.0,
+    "jpeg_internal_name": "redlut_20"
   }
 ]
