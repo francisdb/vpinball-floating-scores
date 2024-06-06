@@ -192,7 +192,7 @@ Sub LeftSlingShot_Slingshot
 End Sub
 ```
 
-### Class
+### Floating Text Class
 
 ```vbscript
 'Floating Text Class 0.01a by nFozzy
@@ -363,4 +363,114 @@ Class FloatingText
 	End Sub
 
 End Class
+```
+
+### Keyframe Animation Class
+
+```vbscript
+'Keyframe Animation Class
+
+'Setup
+'.Update1 - update logic. Use 1 interval
+'.Update - update objects. recommended -1 interval
+'.Update2 - TODO alternative, updates both on -1 TODO
+
+'Properties
+'.State - returns if animation state (true or False)
+'.Addpoint - Add keyframes. 3 argument sub : Keyframe#, Time Value, Output Value. Keep keyframes sequential, and timeline straight.
+'.Modpoint - Modify an existing point
+'.Debug - display debug animation (set before .addpoint to get full debug info)
+'.Play - Play Animation
+'.Pause - Pause mid-animation
+'.Callback - string. Sub to call when animation is updated, with one argument sending the interpolated animation info
+
+'Events
+'.Callback(argument) - whatever you set callback to. Manually attach animation to this value - ie Showframe, Height, RotX, RotY, whatever...
+
+Class cAnimation
+	Public DebugOn
+	Private KeyTemp(99,1)
+	Private Lock, Loaded, StopAnim, UpdateSub
+	Private ms, lvl, KeyStep, KeyLVL 'make these private later
+	private LoopAnim
+
+	Private Sub Class_Initialize : redim KeyStep(99) : redim KeyLVL(99) : Lock = True : Loaded = True : ms = 0: End Sub
+
+	Public Property Get State : State = not Lock : End Property
+	Public Property Let CallBack(String) : UpdateSub = String : End Property
+
+	public Sub AddPoint(aKey, aMS, aLVL)
+		KeyTemp(aKey, 0) = aMS : KeyTemp(aKey, 1) = aLVL
+		Shuffle aKey
+	End Sub
+
+	'  v  v   v    keyframes IDX / (0)
+	'	  .
+	'	 / \lvl (1)
+	'___/	 \___
+	'-----MS--------->
+
+	'in -> AddPoint(KeyFrame#, 0) = KeyFrame(Time) 
+	'in -> AddPoint(KeyFrame#, 1) = KeyFrame(LVL) 
+	'	(1d array conversion)
+	'into -> KeyStep(99)
+	'into -> KeyLvl(99)
+	Private Sub Shuffle(aKey) 'shuffle down keyframe data into 1d arrays 'this sucks, it does't actually shuffle anything
+		redim preserve KeyStep(99) : redim preserve KeyLvl(99)
+		dim str : str = "shuffling @ " & akey & vbnewline
+		dim x : for x = 0 to uBound(KeyTemp)
+			if KeyTemp(x,0) <> "" Then
+				KeyStep(x) = KeyTemp(x,0) : KeyLvl(x) = KeyTemp(x,1)
+			Else
+				if x = 0 then msgbox "cAnimation error: Please start at keyframe 0!" : exit Sub
+				redim preserve KeyStep(x-1) : redim preserve KeyLvl(x-1) : Exit For
+			end If
+		Next
+		str = str & "uBound step:" & uBound(keystep) & vbnewline & "uBound KeyLvl:" & uBound(KeyLvl) & vbnewline
+		If DebugOn then TBanima.text = str & "printing steps:" & vbnewline & PrintArray(keystep) & vbnewline & "printing step values:" & vbnewline & PrintArray(keylvl)
+	End Sub
+
+	Private function PrintArray(aArray)	'debug
+		dim str, x : for x = 0 to uBound(aArray) : str = str & x & ":" & aArray(x) & vbnewline : Next : printarray = str
+	end Function
+
+	Public Sub ModPoint(idx, aMs, aLvl) : KeyStep(idx) = aMs : KeyLVL(idx) = aLvl : End Sub  'modify a point after it's set
+
+	Public Sub Play()	: StopAnim = False : Lock = False : Loaded = False : LoopAnim = False :  End Sub 'play animation
+	Public Sub PlayLoop()	: StopAnim = False : Lock = False : Loaded = False : LoopAnim = True: End Sub 'play animation
+	Public Sub Pause()	: StopAnim = True : end Sub	'pause animation
+
+
+	Public Sub Update2()	 'Both updates on -1 timer (Lowest latency, but less accurate fading at 60fps vsync)
+		'FrameTime = gametime - InitFrame : InitFrame = GameTime	'Calculate frametime
+		if not lock then
+			if ms > keystep(uBound(keystep)) then 
+				If LoopAnim then ms = 0 else StopAnim = True : ms = 0	'No looping
+			End If
+			if StopAnim then Lock = True	'if stopped by script or by end of animation
+			if Not Lock Then ms = ms + 1*lampz.FrameTime : lvl = LinearEnvelope(ms, KeyStep, KeyLVL)
+		end if
+		Update
+	End Sub
+
+	Public Sub Update1()	'update logic
+		if not lock then
+			if ms > keystep(uBound(keystep)) then 
+				If LoopAnim then ms = 0 else StopAnim = True : ms = 0	'No looping
+			End If
+			if StopAnim then Lock = True	'if stopped by script or by end of animation
+			if Not Lock Then ms = ms + 1 : lvl = LinearEnvelope(ms, KeyStep, KeyLVL)
+		end if
+	End Sub
+
+	Public Sub Update() 	'Update object
+		if Not Loaded then
+			if Lock then Loaded = True
+			if DebugOn then dim str : str = "ms:" & ms & vbnewline & "lvl:" & lvl & vbnewline & _
+									Lock & " " & loaded & vbnewline :	tbanim.text = str
+			proc UpdateSub, lvl
+		end if
+	End Sub
+
+End Class 
 ```
