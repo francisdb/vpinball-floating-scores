@@ -7,16 +7,38 @@ The floating scores script was extracted from [Space Station (Wiliams 1987)](htt
 
 ## Resources
 
-## Table script
+Add a `TextBox` named `ScoreBox` to the table, only in use for it's timer
 
-Keep in mind that not everybody likes these floating scores so make sure the user can disable it. On the original table they were only enabled for desktop mode:
+These are the properties nFozzy used:
 
-```vbscript
-Dim FloatingScores
-FloatingScores = Table1.ShowDT 'Enable/Disable floating text scores  (Default: Table1.ShowDT)
-'Does NOT play nicely with B2S at the moment.
-'(In a multiplayer game, floating text will only appear for player 1)
 ```
+  "ver1": {
+      "x": 665.0,
+      "y": 393.0
+    },
+    "ver2": {
+      "x": 1015.0,
+      "y": 543.0
+    },
+    "back_color": "#000000",
+    "font_color": "#ffffff",
+    "intensity_scale": 1.0,
+    "text": " ",
+    "is_timer_enabled": true,
+    "timer_interval": -1,
+    "name": "ScoreBox",
+    "align": "left",
+    "is_transparent": true,
+    "is_dmd": false,
+    "font": {
+      "style": [],
+      "weight": 400,
+      "size": 142500,
+      "name": "Arial"
+    }
+```
+
+## Table script
 
 Currently the system is set up for rom-based tables obly. It's also requesting the full NVRAM instead of looking at changes.
 To make this work you need to add `UseVPMNVRAM = true` to the table script (place before LoadVPM, or otherwise calling core.vbs)
@@ -26,6 +48,17 @@ To make changed content of NVRAM available create a `Sub NVRAMCallback` (require
 The callback will receive an `Array` that contains the changes as an `Array(location, new value, old value)`
 
 For Sys 11 the current score is located at the range `&h200` - `&h203`.
+
+### Config variable
+
+Keep in mind that not everybody likes these floating scores so make sure the user can disable it. On the original table they were only enabled for desktop mode:
+
+```vbscript
+Dim FloatingScores
+FloatingScores = Table1.ShowDT 'Enable/Disable floating text scores  (Default: Table1.ShowDT)
+'Does NOT play nicely with B2S at the moment.
+'(In a multiplayer game, floating text will only appear for player 1)
+```
 
 ### Setup
 
