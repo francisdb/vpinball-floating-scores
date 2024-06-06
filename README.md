@@ -20,7 +20,7 @@ FloatingScores = Table1.ShowDT 'Enable/Disable floating text scores  (Default: T
 
 Currently the system is set up for rom-based tables obly. It's also requesting the full NVRAM instead of looking at changes.
 To make this work you need to add `UseVPMNVRAM = true` to the table script (place before LoadVPM, or otherwise calling core.vbs)
-After that you can reuquest the NVRAM with `Controller.NVRAM`
+After that you can request the NVRAM with `Controller.NVRAM`
 
 To make changed content of NVRAM available create a `Sub NVRAMCallback` (requires VPM 2.7 or newer)
 The callback will receive an `Array` that contains the changes as an `Array(location, new value, old value)`
@@ -171,24 +171,6 @@ LeftSlingPos.Y = 1480
 RightSlingPos.Name = "RightSlingShot"
 RightSlingPos.X = 700-25
 RightSlingPos.Y = 1480
-
-'Some debug boxes
-'tb.timerinterval = 2200
-'tb.Timerenabled = 1
-'Sub tb_timer()
-'	FTlow.TextAt "1234567", 600, 1000
-'End Sub
-
-'Sub tbDB_Timer()
-'	dim str,x
-'	for x = 0 to ftlow.count
-'		str = str & "L&L " & x & ": " & abs(Ftlow.Lock(x)) & "" & abs(Ftlow.loaded(x)) & vbnewline '& " " & FtLow.Text(x)
-'	Next
-'	if me.text <> str then me.text = str end if
-'End Sub
-
-
-
 
 'End Floating text
 '*************
