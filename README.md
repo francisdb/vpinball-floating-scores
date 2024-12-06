@@ -28,7 +28,7 @@ After that you can request the NVRAM with `Controller.NVRAM`
 
 ```vbscript
 ' place before LoadVPM, or otherwise calling core.vbs
-UseVPMNVRAM = true
+Const UseVPMNVRAM = true
 ```
 
 *To make changed content of NVRAM available create a `Sub NVRAMCallback` (requires VPM 2.7 or newer)
